@@ -5,7 +5,7 @@
     ./networking.nix
     ./packages.nix
     ./settings.nix
-    ./storage.nix
+    # ./storage.nix
     ./tools.nix
     ./users.nix
   ];

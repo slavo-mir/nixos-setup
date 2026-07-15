@@ -1,7 +1,7 @@
 {
   imports = [
     ./ananicy.nix
-    ./cpufreq.nix
+    # ./cpufreq.nix
     ./irqbalance.nix
     ./zen.nix
     ./zram.nix
