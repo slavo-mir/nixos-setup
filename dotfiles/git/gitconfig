@@ -1,7 +1,5 @@
 [user]
 	useConfigOnly = true
-	email = you@example.com
-	name = Your Name
 
 [includeIf "gitdir:~/dev/personal/"]
 	path = ~/.config/git/personal.gitconfig
