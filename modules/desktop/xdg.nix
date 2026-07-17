@@ -23,5 +23,10 @@
     "d %h/Pictures/screenshots 0755 - - -"
     "d %h/Videos/fetched 0755 - - -"
     "d %h/Videos/recordings 0755 - - -"
+
+    "d %h/dev 0755 - - -"
+    "d %h/dev/personal 0755 - - -"
+    "d %h/dev/local 0755 - - -"
+    "d %h/dev/uni 0755 - - -"
   ];
 }

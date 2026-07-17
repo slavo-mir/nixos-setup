@@ -1,0 +1,13 @@
+[user]
+	useConfigOnly = true
+	email = you@example.com
+	name = Your Name
+
+[includeIf "gitdir:~/dev/personal/"]
+	path = ~/.config/git/personal.gitconfig
+
+[includeIf "gitdir:~/dev/uni/"]
+	path = ~/.config/git/uni.gitconfig
+
+[includeIf "gitdir:~/dev/local/"]
+	path = ~/.config/git/local.gitconfig

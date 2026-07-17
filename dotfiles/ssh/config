@@ -1,0 +1,4 @@
+Host git-local
+  HostName 10.100.0.2
+  User git
+  IdentityFile ~/.ssh/id_ed25519_gitserver

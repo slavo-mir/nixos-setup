@@ -27,14 +27,6 @@ in {
         executable = "${pkgs.imv}/bin/imv";
         profile = "${pkgs.firejail}/etc/firejail/imv.profile";
       };
-      # steam = {
-      #   executable = "${pkgs.steam}/bin/steam";
-      #   profile = "${pkgs.firejail}/etc/firejail/steam.profile";
-      # };
-      # git = {
-      #   executable = "${pkgs.git}/bin/git";
-      #   profile = "${pkgs.firejail}/etc/firejail/git.profile";
-      # };
       wget = {
         executable = "${pkgs.wget}/bin/wget";
         profile = "${pkgs.firejail}/etc/firejail/wget.profile";

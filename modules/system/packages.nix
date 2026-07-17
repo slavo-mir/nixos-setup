@@ -1,28 +1,30 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     adguardhome
-    autotiling
+    alacritty
     brightnessctl
     dconf
     easyeffects
     firefox
     firejail
     fish
-    foot
     fzf
     git
     grim
     imv
+    jq
     libnotify
     mako
     mpv
     neovim
     playerctl
+    rsync
     slurp
     steam
     sway
     swayidle
     swaylock
+    tmux
     tree
     unzip
     wf-recorder

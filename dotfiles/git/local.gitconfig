@@ -1,0 +1,6 @@
+[user]
+	name = slavomir
+	email = slavomir@nixos.local
+
+[core]
+	sshCommand = "ssh -i ~/.ssh/id_ed25519_gitserver -o IdentitiesOnly=yes"

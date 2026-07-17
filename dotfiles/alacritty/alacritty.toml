@@ -1,0 +1,34 @@
+[window]
+padding = { x = 0, y = 0 }
+opacity = 1.0
+
+[font]
+normal = { family = "monospace" }
+size = 12.0
+
+[scrolling]
+history = 1000
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xffffff"
+
+[colors.normal]
+black   = "0x27272a"
+red     = "0xf5a191"
+green   = "0x90b99f"
+yellow  = "0xe6b99d"
+blue    = "0xaca1cf"
+magenta = "0xe29eca"
+cyan    = "0xea83a5"
+white   = "0xc1c0d4"
+
+[colors.bright]
+black   = "0x353539"
+red     = "0xffae9f"
+green   = "0x9dc6ac"
+yellow  = "0xf0c5a9"
+blue    = "0xb9aeda"
+magenta = "0xecaad6"
+cyan    = "0xf591b2"
+white   = "0xcac9dd"
