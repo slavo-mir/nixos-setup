@@ -4,6 +4,11 @@
   networking.networkmanager.dns = "none";
   networking.nameservers = [ "127.0.0.1" ];
 
+  networking.networkmanager.wifi.powersave = false;
+
+  boot.kernel.sysctl."net.ipv4.tcp_congestion_control" = "bbr";
+  boot.kernel.sysctl."net.core.default_qdisc" = "fq";
+
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ ];
