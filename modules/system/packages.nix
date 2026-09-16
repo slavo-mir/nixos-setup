@@ -4,7 +4,6 @@
     alacritty
     brightnessctl
     dconf
-    easyeffects
     firefox
     firejail
     fish
@@ -12,9 +11,12 @@
     git
     grim
     imv
+    jdk21
     jq
     libnotify
     mako
+    obs-studio
+    prismlauncher
     mpv
     neovim
     playerctl
@@ -32,7 +34,6 @@
     wl-clipboard
     wmenu
   ];
-
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans

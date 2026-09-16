@@ -1,4 +1,4 @@
-{ ... }: {
+{
   services.keyd = {
     enable = true;
     keyboards.default = {
@@ -6,10 +6,6 @@
       settings = {
         main = {
           capslock = "backspace";
-        };
-
-        meta = {
-          space = "toggle(colemak_dh)";
         };
 
         altgr = {
@@ -20,6 +16,8 @@
           k = "down";
           l = "up";
           semicolon = "right";
+
+          leftalt = "toggle(colemak_dh)";
         };
 
         colemak_dh = {

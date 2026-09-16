@@ -7,6 +7,7 @@ font=monospace 10
 default-timeout=5000
 background-color=#000000
 text-color=#ffffff
+layer=overlay
 
 [category=status1]
 anchor=top-center
@@ -18,6 +19,7 @@ height=40
 text-alignment=center
 default-timeout=1500
 format=%b
+layer=overlay
 
 [category=status2]
 anchor=top-center
@@ -29,6 +31,7 @@ height=40
 text-alignment=center
 default-timeout=1500
 format=%b
+layer=overlay
 
 [category=status3]
 anchor=top-center
@@ -40,3 +43,28 @@ height=40
 text-alignment=center
 default-timeout=1500
 format=%b
+layer=overlay
+
+[category=status4]
+anchor=top-center
+margin=1000,0,0,0
+border-size=0
+border-radius=6
+width=280
+height=40
+text-alignment=center
+default-timeout=1500
+format=%b
+layer=overlay
+
+[category=status5]
+anchor=top-center
+margin=1000,0,0,0
+border-size=0
+border-radius=6
+width=280
+height=40
+text-alignment=center
+default-timeout=1500
+format=%b
+layer=overlay

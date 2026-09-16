@@ -31,6 +31,10 @@ in {
         executable = "${pkgs.wget}/bin/wget";
         profile = "${pkgs.firejail}/etc/firejail/wget.profile";
       };
+      prismlauncher = {
+        executable = "${pkgs.prismlauncher}/bin/prismlauncher";
+        profile = "${pkgs.firejail}/etc/firejail/prismlauncher.profile";
+      };
     };
   };
 }
