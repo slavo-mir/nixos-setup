@@ -8,8 +8,8 @@
     config = {
       common = {
         default = [
-	  "wlr"
-	];
+	        "wlr"
+	      ];
       };
     };
   };
