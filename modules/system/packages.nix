@@ -15,9 +15,9 @@
     jq
     libnotify
     mako
+    mpv
     obs-studio
     prismlauncher
-    mpv
     neovim
     playerctl
     rsync
@@ -26,6 +26,7 @@
     sway
     swayidle
     swaylock
+    telegram-desktop
     tmux
     tree
     unzip
@@ -34,6 +35,7 @@
     wl-clipboard
     wmenu
   ];
+
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
