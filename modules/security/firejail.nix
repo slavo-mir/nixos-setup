@@ -19,21 +19,30 @@ in {
         executable = "${pkgs.firefox}/bin/firefox";
         profile = "${myFirefoxProfile}";
       };
+
       mpv = {
         executable = "${pkgs.mpv}/bin/mpv";
         profile = "${pkgs.firejail}/etc/firejail/mpv.profile";
       };
+
       imv = {
         executable = "${pkgs.imv}/bin/imv";
         profile = "${pkgs.firejail}/etc/firejail/imv.profile";
       };
+
       wget = {
         executable = "${pkgs.wget}/bin/wget";
         profile = "${pkgs.firejail}/etc/firejail/wget.profile";
       };
+
       prismlauncher = {
         executable = "${pkgs.prismlauncher}/bin/prismlauncher";
         profile = "${pkgs.firejail}/etc/firejail/prismlauncher.profile";
+      };
+
+      telegram-desktop = {
+        executable = "${pkgs.telegram-desktop}/bin/Telegram";
+        profile = "${pkgs.firejail}/etc/firejail/telegram.profile";
       };
     };
   };
