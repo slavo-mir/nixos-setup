@@ -1,8 +1,10 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     adguardhome
+    age
     alacritty
     brightnessctl
+    btop
     dconf
     firefox
     firejail
