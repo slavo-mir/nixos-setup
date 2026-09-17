@@ -24,6 +24,7 @@ let
 in {
   environment.etc."firejail/globals.local".text = ''
     blacklist ''${HOME}/Documents
+    blacklist ''${HOME}/Projects
   '';
 
   programs.firejail = {
@@ -39,6 +40,11 @@ in {
         profile = "${myTelegramProfile}";
       };
 
+      prismlauncher = {
+        executable = "${pkgs.prismlauncher}/bin/prismlauncher";
+        profile = "${pkgs.firejail}/etc/firejail/prismlauncher.profile";
+      };
+
       mpv = {
         executable = "${pkgs.mpv}/bin/mpv";
         profile = "${pkgs.firejail}/etc/firejail/mpv.profile";
@@ -52,11 +58,6 @@ in {
       wget = {
         executable = "${pkgs.wget}/bin/wget";
         profile = "${pkgs.firejail}/etc/firejail/wget.profile";
-      };
-
-      prismlauncher = {
-        executable = "${pkgs.prismlauncher}/bin/prismlauncher";
-        profile = "${pkgs.firejail}/etc/firejail/prismlauncher.profile";
       };
     };
   };
