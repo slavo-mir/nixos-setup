@@ -26,9 +26,9 @@
     "d %h/Videos/fetched 0755 - - -"
     "d %h/Videos/recordings 0755 - - -"
 
-    "d %h/dev 0755 - - -"
-    "d %h/dev/personal 0755 - - -"
-    "d %h/dev/local 0755 - - -"
-    "d %h/dev/uni 0755 - - -"
+    "d %h/Projects 0755 - - -"
+    "d %h/Projects/personal 0755 - - -"
+    "d %h/Projects/local 0755 - - -"
+    "d %h/Projects/uni 0755 - - -"
   ];
 }

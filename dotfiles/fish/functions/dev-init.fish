@@ -1,8 +1,8 @@
 function dev-init
     set -l dir (pwd)
 
-    if not string match -q "$HOME/dev/*" $dir
-        echo "[bootstrap] not inside ~/dev/{personal,local,uni} — git identity would not resolve"
+    if not string match -q "$HOME/Projects/*" $dir
+        echo "[bootstrap] not inside ~/Projects/{personal,local,uni} — git identity would not resolve"
         return 1
     end
 

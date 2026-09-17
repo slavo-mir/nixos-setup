@@ -1,11 +1,11 @@
 [user]
 	useConfigOnly = true
 
-[includeIf "gitdir:~/dev/personal/"]
+[includeIf "gitdir:~/Projects/personal/"]
 	path = ~/.config/git/personal.gitconfig
 
-[includeIf "gitdir:~/dev/uni/"]
+[includeIf "gitdir:~/Projects/uni/"]
 	path = ~/.config/git/uni.gitconfig
 
-[includeIf "gitdir:~/dev/local/"]
+[includeIf "gitdir:~/Projects/local/"]
 	path = ~/.config/git/local.gitconfig

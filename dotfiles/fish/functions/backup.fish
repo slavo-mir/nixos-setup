@@ -2,7 +2,7 @@ function backup
     __git-server-mounted; or return 1
 
     set -l dest /mnt/data/backup
-    set -l sources dev Documents Downloads Music Pictures Videos
+    set -l sources Projects Documents Downloads Music Pictures Videos
 
     if not test -d $dest
         echo "[backup] creating $dest and fixing permissions..."

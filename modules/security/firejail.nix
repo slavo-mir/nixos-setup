@@ -8,16 +8,35 @@ let
       whitelist ''${HOME}/Music
       whitelist ''${HOME}/Videos
       whitelist ''${HOME}/Pictures
-      whitelist ''${HOME}/Downloads
+    '';
+  };
+
+  myTelegramProfile = pkgs.writeTextFile {
+    name = "telegram-custom.profile";
+    text = ''
+      include ${pkgs.firejail}/etc/firejail/telegram.profile
+
+      whitelist ''${HOME}/Music
+      whitelist ''${HOME}/Videos
+      whitelist ''${HOME}/Pictures
     '';
   };
 in {
+  environment.etc."firejail/globals.local".text = ''
+    blacklist ''${HOME}/Documents
+  '';
+
   programs.firejail = {
     enable = true;
     wrappedBinaries = {
       firefox = {
         executable = "${pkgs.firefox}/bin/firefox";
         profile = "${myFirefoxProfile}";
+      };
+
+      telegram-desktop = {
+        executable = "${pkgs.telegram-desktop}/bin/Telegram";
+        profile = "${myTelegramProfile}";
       };
 
       mpv = {
@@ -38,11 +57,6 @@ in {
       prismlauncher = {
         executable = "${pkgs.prismlauncher}/bin/prismlauncher";
         profile = "${pkgs.firejail}/etc/firejail/prismlauncher.profile";
-      };
-
-      telegram-desktop = {
-        executable = "${pkgs.telegram-desktop}/bin/Telegram";
-        profile = "${pkgs.firejail}/etc/firejail/telegram.profile";
       };
     };
   };

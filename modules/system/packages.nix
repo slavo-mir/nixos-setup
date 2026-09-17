@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     adguardhome
     alacritty
+    anki-bin
     brightnessctl
     dconf
     firefox
