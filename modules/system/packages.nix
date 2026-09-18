@@ -36,6 +36,7 @@
     wget
     wl-clipboard
     wmenu
+    zip
   ];
 
   fonts.packages = with pkgs; [
