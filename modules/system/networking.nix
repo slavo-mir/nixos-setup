@@ -2,12 +2,8 @@
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
   networking.networkmanager.dns = "none";
-  networking.nameservers = [ "127.0.0.1" ];
-
   networking.networkmanager.wifi.powersave = false;
-
-  boot.kernel.sysctl."net.ipv4.tcp_congestion_control" = "bbr";
-  boot.kernel.sysctl."net.core.default_qdisc" = "fq";
+  networking.nameservers = [ "127.0.0.1" ];
 
   networking.firewall = {
     enable = true;
@@ -15,11 +11,19 @@
     allowedUDPPorts = [ 53 ];
   };
 
+  networking.firewall.interfaces."wlp8s0" = {
+    allowedTCPPorts = [ 22 ];
+  };
+
+  boot.kernel.sysctl."net.ipv4.tcp_congestion_control" = "bbr";
+  boot.kernel.sysctl."net.core.default_qdisc" = "fq";
+
   services.resolved.enable = false;
 
   services.openssh = {
     enable = true;
     settings.PasswordAuthentication = false;
+    openFirewall = false;
   };
 
   services.adguardhome = {
