@@ -19,6 +19,8 @@
     };
 
     shellInit = ''
+      umask 077
+
       set -gx EDITOR nvim
       set -gx VISUAL nvim
 
