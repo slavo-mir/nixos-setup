@@ -1,5 +1,8 @@
 { ... }: {
   security.protectKernelImage = true;
+  security.lockKernelModules = true;
+
+  environment.memoryAllocator.provider = "graphene-hardened";
 
   boot.kernel.sysctl = {
     "kernel.yama.ptrace_scope" = 1;
