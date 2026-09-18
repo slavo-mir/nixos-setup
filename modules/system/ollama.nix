@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   services.ollama = {
-    enable = true;
+    enable = false;
     package = pkgs.ollama-cuda;
     host = "127.0.0.1";
   };
