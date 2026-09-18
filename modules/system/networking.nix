@@ -3,6 +3,8 @@
   networking.networkmanager.enable = true;
   networking.networkmanager.dns = "none";
   networking.networkmanager.wifi.powersave = false;
+  networking.networkmanager.wifi.macAddress = "stable";
+  networking.networkmanager.ethernet.macAddress = "stable";
   networking.nameservers = [ "127.0.0.1" ];
 
   networking.firewall = {
