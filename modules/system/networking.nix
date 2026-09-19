@@ -1,8 +1,18 @@
 { pkgs, ... }: {
   networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
-  networking.networkmanager.dns = "none";
-  networking.networkmanager.wifi.powersave = false;
+
+  networking.networkmanager = {
+    enable = true;
+    dns = "none";
+    wifi = {
+      powersave = false;
+      macAddress = "random";
+    };
+    ethernet = {
+      macAddress = "random";
+    };
+  };
+
   networking.nameservers = [ "127.0.0.1" ];
 
   networking.firewall = {
