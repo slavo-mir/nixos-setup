@@ -4,6 +4,11 @@
   networking.networkmanager = {
     enable = true;
     dns = "none";
+    settings = {
+      main = {
+        hostname-mode = "none";
+      };
+    };
     wifi = {
       powersave = false;
       macAddress = "random";
@@ -21,20 +26,10 @@
     allowedUDPPorts = [ 53 ];
   };
 
-  networking.firewall.interfaces."wlp8s0" = {
-    allowedTCPPorts = [ 22 ];
-  };
-
   boot.kernel.sysctl."net.ipv4.tcp_congestion_control" = "bbr";
   boot.kernel.sysctl."net.core.default_qdisc" = "fq";
 
   services.resolved.enable = false;
-
-  services.openssh = {
-    enable = true;
-    settings.PasswordAuthentication = false;
-    openFirewall = false;
-  };
 
   services.adguardhome = {
     enable = true;
