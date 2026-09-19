@@ -1,6 +1,5 @@
 { ... }: {
   security.protectKernelImage = true;
-  security.lockKernelModules = true;
 
   boot.kernel.sysctl = {
     "kernel.yama.ptrace_scope" = 1;
